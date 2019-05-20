@@ -29,7 +29,7 @@ let song;
 var food;
 
 function preload() {
-    song = ('assets/keep.mp3')
+    song = loadSound('assets/keep.mp3')
 }
   function setup()
     {
@@ -62,7 +62,7 @@ function preload() {
 
 //snake stuff
         
-            song = loadSound('assets/keep.mp3');
+            //song = loadSound('assets/keep.mp3');
         //song2 = loadSound......
   s = new Snake();
   frameRate(10);
