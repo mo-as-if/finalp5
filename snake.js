@@ -17,7 +17,8 @@ function Snake() {
 
   this.eat = function(pos) {
     var d = dist(this.x, this.y, pos.x, pos.y);
-    if (d < 2) {
+    if (d < 20) {
+      console.log('sound');
       this.total++;
       return true;
     } else {
@@ -34,7 +35,7 @@ function Snake() {
     for (var i = 0; i < this.tail.length; i++) {
       var pos = this.tail[i];
       var d = dist(this.x, this.y, pos.x, pos.y);
-      if (d < 20) {
+      if (d < 2) {
         console.log('starting over');
         this.total = 0;
         this.tail = [];
