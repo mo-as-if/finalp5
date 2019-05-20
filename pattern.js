@@ -23,11 +23,14 @@ var b2;
 
 var s;
 var scl = 20;
-let song; 
+//let song; 
 //let song2;
 
 var food;
 
+function preload() {
+    song = ('assets/keep.mp3')
+}
   function setup()
     {
         
