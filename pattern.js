@@ -74,8 +74,8 @@ function preload() {
     {
 
         //change the x below to a fixed int and see what happens
-        strokeWeight(20);
-        stroke(0, 0, 0, 50);
+        strokeWeight(10);
+        stroke(0, 0, 0, 70);
         noFill();
         background(r, g, b, 125);
 
@@ -85,9 +85,8 @@ function preload() {
             {
                 translate(i + width/2, j);
                 rotate(rot);
-              // ellipse(30, 30, 20, 20);
-              // ellipse(200, 200, 200, 200);
-                rect(0, 0, 600, 600);
+                rect(0, 0, 700, 700);
+                ellipse(0, 0, 700, 700);
                 resetMatrix();
             }
         }
