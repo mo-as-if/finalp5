@@ -24,12 +24,13 @@ var b2;
 var s;
 var scl = 20;
 let song; 
-//let song2;
+let song2;
 
 var food;
 
 function preload() {
     song = loadSound('assets/LaCiudad.mp3');
+    song2 = loadSound('assets/keep.mp3);
 }
   function setup()
     {
@@ -121,10 +122,10 @@ function preload() {
   if (song.isPlaying()) {
     // .isPlaying() returns a boolean
     song.stop();
-//      song2.play();
+     song2.play();
     background(255, 0, 0);
   } else {
-//      song2.stop();
+     song2.stop();
     song.play();
     background(0, 255, 0);
   }
