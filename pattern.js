@@ -23,18 +23,19 @@ var b2;
 
 var s;
 var scl = 20;
-let song; 
+let song;
 let song2;
 
 var food;
 
 function preload() {
     song = loadSound('assets/LaCiudad.mp3');
-    song2 = loadSound('assets/keep.mp3);
+    song2 = loadSound('assets/keep.mp3');
 }
+
   function setup()
     {
-        
+
       x = 6;
 
       x2 = .08;
@@ -62,7 +63,7 @@ function preload() {
   //  background(255, 0, 0);
 
 //snake stuff
-        
+
             //song = loadSound('assets/keep.mp3');
         //song2 = loadSound......
   s = new Snake();
@@ -115,9 +116,9 @@ function preload() {
         if (b < 20 || b > 255) {
             b2 *= -1;
         }
-        
+
         if (s.eat(food)) {
-          
+
   if (song.isPlaying()) {
     // .isPlaying() returns a boolean
     song.stop();
