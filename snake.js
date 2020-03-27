@@ -1,12 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/AaGK-fj-BAM
-//function setup(){
-//    song = loadSound('assets/Aritus-Keep copy.mp3');
-//}
-
-
 function Snake() {
   this.x = 0;
   this.y = 0;
